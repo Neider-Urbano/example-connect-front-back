@@ -6,9 +6,8 @@ function App() {
   const [text, setText] = useState("");
   const [user, setUser] = useState({});
   const [catsList, setCatsList] = useState([]);
-  const api = "http://localhost:3000/";
+  const api = import.meta.env.VITE_URL_BACKEND || "http://localhost:3000/";
 
-  //Use fetch o axios
   useEffect(() => {
     axios
       .get(api)
