@@ -1,0 +1,48 @@
+.app {
+  text-align: center;
+  width: auto;
+  padding: 25px 50px;
+}
+/* Estilos generales de la lista de cards */
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+/* Estilos generales de cada card */
+.card {
+  width: 250px;
+  background-color: #ebe5e5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos para la imagen de cada card */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Estilos para el contenido de cada card */
+.card-content {
+  padding: 3px 10px;
+}
+.card-content h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.card-content p {
+  font-size: 20px;
+  color: #555;
+  margin: 0;
+}
